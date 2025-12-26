@@ -179,18 +179,26 @@
             z-index: 10;
             position: relative;
         }
+        .badge {
+            display: inline-block;
+            color: #fff;
+        }
         .badge-danger {
             background: linear-gradient(135deg, #ff3333, #cc0000);
             padding: 8px 15px;
             border-radius: 20px;
             font-weight: 600;
             box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+            display: inline-block;
+            color: #fff;
         }
         .badge-info {
             background: linear-gradient(135deg, #3366ff, #0033cc);
             padding: 8px 15px;
             border-radius: 20px;
             font-weight: 600;
+            display: inline-block;
+            color: #fff;
         }
         .validation-footer {
             text-align: center;
@@ -319,23 +327,23 @@
             </div>
 
             <div class="tabs-container">
-                <ul class="nav nav-tabs" role="tablist">
+                <ul class="nav nav-tabs" role="tablist" id="victim-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#border-crossings"><i class="fas fa-plane"></i> Граница</a>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#victim-border-crossings" role="tab"><i class="fas fa-plane"></i> Граница</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#registration"><i class="fas fa-file-alt"></i> Регистрация</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#victim-registration" role="tab"><i class="fas fa-file-alt"></i> Регистрация</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#banking"><i class="fas fa-university"></i> Банки</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#victim-banking" role="tab"><i class="fas fa-university"></i> Банки</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#connections"><i class="fas fa-users"></i> Связи</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#victim-connections" role="tab"><i class="fas fa-users"></i> Связи</a>
                     </li>
                 </ul>
 
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="border-crossings">
+                <div class="tab-content" id="victim-tab-content">
+                    <div class="tab-pane fade show active" id="victim-border-crossings" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-border-all"></i> Пересечения границы</div>
                             <div class="list-item">
@@ -353,7 +361,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="registration">
+                    <div class="tab-pane fade" id="victim-registration" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-file-contract"></i> Регистрационный учет МВД</div>
                             <div class="list-item">
@@ -367,7 +375,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="banking">
+                    <div class="tab-pane fade" id="victim-banking" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-credit-card"></i> Банковские данные</div>
                             <div class="list-item">
@@ -379,7 +387,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="connections">
+                    <div class="tab-pane fade" id="victim-connections" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-network-wired"></i> Связи по адресу</div>
                             <div class="list-item">
@@ -443,26 +451,26 @@
             </div>
 
             <div class="tabs-container">
-                <ul class="nav nav-tabs" role="tablist">
+                <ul class="nav nav-tabs" role="tablist" id="mother-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#mother-debts"><i class="fas fa-exclamation-triangle"></i> Долги ФССП</a>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#mother-debts" role="tab"><i class="fas fa-exclamation-triangle"></i> Долги ФССП</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#mother-border"><i class="fas fa-plane"></i> Граница</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#mother-border" role="tab"><i class="fas fa-plane"></i> Граница</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#mother-business"><i class="fas fa-briefcase"></i> Бизнес</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#mother-business" role="tab"><i class="fas fa-briefcase"></i> Бизнес</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#mother-income"><i class="fas fa-money-bill-wave"></i> Доходы</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#mother-income" role="tab"><i class="fas fa-money-bill-wave"></i> Доходы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#mother-loans"><i class="fas fa-hand-holding-usd"></i> Кредиты</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#mother-loans" role="tab"><i class="fas fa-hand-holding-usd"></i> Кредиты</a>
                     </li>
                 </ul>
 
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="mother-debts">
+                <div class="tab-content" id="mother-tab-content">
+                    <div class="tab-pane fade show active" id="mother-debts" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-gavel"></i> Исполнительные производства ФССП</div>
                             <div class="list-item">
@@ -507,7 +515,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="mother-border">
+                    <div class="tab-pane fade" id="mother-border" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-border-all"></i> Пересечения границы</div>
                             <div class="list-item">
@@ -522,7 +530,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="mother-business">
+                    <div class="tab-pane fade" id="mother-business" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-building"></i> Предпринимательская деятельность</div>
                             <div class="list-item">
@@ -536,7 +544,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="mother-income">
+                    <div class="tab-pane fade" id="mother-income" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-briefcase"></i> Места работы и доходы</div>
                             <div class="list-item">
@@ -560,7 +568,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="mother-loans">
+                    <div class="tab-pane fade" id="mother-loans" role="tabpanel">
                         <div class="data-section">
                             <div class="data-section-title"><i class="fas fa-credit-card"></i> Кредиты и МФО</div>
                             <div class="list-item">
@@ -601,7 +609,7 @@
                 BY Клан CTRL
             </div>
             <a href="https://t.me/+Fdrw6j5xrRxiNmI6" class="channel-btn" target="_blank">
-                <i class="fab fa-telegram"></i> ВСТУПАЙ В КАНАЛ - БОЛЬШЕ ЖЕСТИ
+                <i class="fab fa-telegram"></i> ВСТУПАЙ В КАНАЛ - БОЛЬШЕ валидаций
             </a>
         </div>
     </div>
